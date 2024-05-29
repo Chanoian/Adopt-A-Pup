@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Template
 metadata:
   name: mongodb
+  namespace: adopt-a-pup
   annotations:
     description: "MongoDB template"
 objects:

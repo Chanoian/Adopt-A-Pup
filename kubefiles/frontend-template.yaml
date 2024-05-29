@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Template
 metadata:
   name: frontend-template
+  namespace: adopt-a-pup
   annotations:
     description: "Front end template"
 objects:
@@ -46,6 +47,7 @@ objects:
       labels:
         app: frontend
       name: frontend
+      namespace: adopt-a-pup
     spec:
       ports:
         - port: 3000

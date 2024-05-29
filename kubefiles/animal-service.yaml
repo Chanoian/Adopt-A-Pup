@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: animal
+  namespace: adopt-a-pup
 spec:
   selector:
     matchLabels:
@@ -27,6 +28,7 @@ metadata:
   labels:
     app: animal
   name: animal
+  namespace: adopt-a-pup
 spec:
   ports:
     - port: 8080
@@ -39,6 +41,7 @@ apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
   name: animal
+  namespace: adopt-a-pup
 spec:
   hosts:
     - "*"
