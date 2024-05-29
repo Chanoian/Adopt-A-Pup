@@ -28,7 +28,7 @@ spec:
             - name: MONGODB_PASSWORD
               value: "developer"
             - name: MONGODB_DATABASE
-              value: "adopt-a-pup"
+              value: "namespace: adoptapup"
             - name: MONGODB_ADMIN_PASSWORD
               value: "redhat"
 ---

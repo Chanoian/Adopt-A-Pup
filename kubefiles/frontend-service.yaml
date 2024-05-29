@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: quay.io/redhattraining/ossm-adopt-a-pup-webapp:1.0
+          image: quay.io/redhattraining/ossm-namespace: adoptapup-webapp:1.0
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
