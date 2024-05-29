@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: shelter
-  namespace: namespace: adoptapup
+  namespace: adoptapup
 spec:
   selector:
     matchLabels:
@@ -28,7 +28,7 @@ metadata:
   labels:
     app: shelter
   name: shelter
-  namespace: namespace: adoptapup
+  namespace: adoptapup
 spec:
   ports:
     - port: 8080
@@ -41,7 +41,7 @@ apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
   name: shelter
-  namespace: namespace: adoptapup
+  namespace: adoptapup
 spec:
   hosts:
     - "*"

@@ -2,7 +2,7 @@ apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
   name: adoptapup-gateway
-  namespace: namespace: adoptapup
+  namespace: adoptapup
 spec:
   selector:
     istio: ingressgateway

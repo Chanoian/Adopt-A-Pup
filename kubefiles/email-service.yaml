@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: email
-  namespace: namespace: adoptapup
+  namespace: adoptapup
 spec:
   selector:
     matchLabels:
@@ -31,7 +31,7 @@ metadata:
   labels:
     app: email
   name: email
-  namespace: namespace: adoptapup
+  namespace: adoptapup
 spec:
   ports:
     - port: 8080
@@ -49,7 +49,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: email
-  namespace: namespace: adoptapup
+  namespace: adoptapup
   labels:
     app: email
 spec:
